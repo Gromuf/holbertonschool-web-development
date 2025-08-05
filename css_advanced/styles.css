@@ -1,0 +1,190 @@
+/* RESET de base */
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+/* body */
+body {
+  font-family: 'Source Sans Pro', sans-serif;
+  position: relative;
+  color: white;
+  background-color: #071629; /* base */
+  overflow-x: hidden;
+}
+
+/* IMAGE + GRADIENT */
+body::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 50%;
+  transform: translateX(-50%);
+  width: 100vw;
+  height: 1093px;
+
+  background: 
+    radial-gradient(
+      85.9% 85.9% at 50% 14.1%,
+      rgba(41, 48, 61, 0.0001) 0%,
+      #071629 100%
+    ),
+    url('images/Background.png');
+
+  background-repeat: no-repeat;
+  background-size: 100% auto; /* ⬅️ étire horizontalement */
+  background-position: center top;
+  background-blend-mode: normal, color;
+
+  z-index: 0;
+  pointer-events: none;
+}
+
+/* HEADER */
+header {
+  width: 100%;
+  padding: 35px 10%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  position: relative;
+  z-index: 2;
+}
+
+/* Logo */
+header > a img {
+  height: 29.46px;
+}
+
+/* Bloc des liens */
+header > div {
+  display: flex;
+  gap: 36px;
+  align-items: center;
+}
+
+/* Liens */
+header > div a {
+  font-weight: 700;
+  font-size: 12px;
+  line-height: 15px;
+  color: #ffffff;
+  text-decoration: none;
+  transition: color 0.3s;
+}
+
+header > div a:hover {
+  color: #c271ff;
+}
+
+main {
+  position: relative;
+  z-index: 2;
+}
+
+/* SECTION BANNER ("Get schooled") */
+main section:first-of-type {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+  padding: 150px 10% 100px;
+}
+
+/* Get schooled */
+main section:first-of-type h1 {
+  font-size: 120px;
+  line-height: 151px;
+  font-weight: 700;
+  margin-bottom: 20px;
+}
+
+/* SMILES GRIN LAUGH */
+main section:first-of-type p {
+  font-size: 16px;
+  font-weight: 700;
+  letter-spacing: 2px;
+  line-height: 20px;
+  margin-bottom: 40px;
+}
+
+/* REGISTER BUTTON */
+main section:first-of-type button {
+  background-color: #C271FF;
+  color: white;
+  font-size: 14px;
+  font-weight: 600;
+  padding: 12px 24px;
+  border: none;
+  border-radius: 22px;
+  cursor: pointer;
+  box-shadow: 0px 2px 20px rgba(0, 0, 0, 0.5);
+  margin-bottom: 120px;
+  transition: background-color 0.3s ease;
+}
+
+main section:first-of-type button:hover {
+  background-color: #a950e0;
+}
+
+/* Learn from the pros */
+main section:first-of-type h2 {
+  color: #C271FF;
+  font-size: 32px;
+  font-weight: 700;
+  line-height: 40px;
+  margin-bottom: 60px;
+}
+
+/* PROS BLOCK */
+main section:first-of-type > div:last-child > div {
+  display: flex;
+  justify-content: center;
+  gap: 60px;
+  flex-wrap: wrap;
+}
+
+/* Each pro card */
+main section:first-of-type > div:last-child > div > div {
+  position: relative;
+  width: 150px;
+  height: 237px; /* Hauteur exacte Figma */
+  text-align: center;
+}
+
+/* Avatar */
+main section:first-of-type > div:last-child > div > div > img {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 150px;
+  height: 150px;
+  border-radius: 50%;
+  object-fit: cover;
+}
+
+/* Name */
+main section:first-of-type > div:last-child > div > div > h3 {
+  position: absolute;
+  top: calc(50% - 13.5px + 55px); /* 13.5 = 27px/2 */
+  left: 0;
+  right: 0;
+  font-size: 18px;
+  font-weight: 900;
+  line-height: 27px;
+  color: white;
+}
+
+/* Description */
+main section:first-of-type > div:last-child > div > div > p {
+  position: absolute;
+  top: calc(50% - 24px + 94.5px); /* 24 = 48px/2 */
+  left: 0;
+  right: 0;
+  font-style: italic;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 24px;
+  color: white;
+}

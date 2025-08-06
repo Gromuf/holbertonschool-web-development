@@ -188,3 +188,55 @@ main section:first-of-type > div:last-child > div > div > p {
   line-height: 24px;
   color: white;
 }
+
+/* testimonial-background */
+section.testimonial {
+  background-color: #C271FF;
+  color:white;
+  padding: 80px 10%;
+  display: flex;
+  justify-content: center;
+}
+
+/* img + text */
+.testimonial-content {
+  display: flex;
+  align-items: center;
+  max-width: 943px;
+  gap: 40px;
+}
+
+/* avatar */
+.testimonial-content .avatar {
+  width: 160px;
+  height: 160px;
+  border-radius: 50%;
+  object-fit: cover;
+  background: white;
+}
+
+/* text */
+.testimonial-content .text {
+  max-width: 730px;
+}
+
+.testimonial-content blockquote {
+  font-size: 22px;
+  line-height: 34px;
+  font-style: normal;
+  font-weight: 400;
+  margin-bottom: 20px;
+}
+
+.testimonial-content .name {
+  font-size: 22px;
+  font-weight: 700;
+  line-height: 34px;
+}
+
+.testimonial-content .title {
+  font-size: 22px;
+  font-style: italic;
+  line-height: 34px;
+  margin-top: 5px;
+}

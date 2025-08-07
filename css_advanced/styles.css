@@ -240,3 +240,102 @@ section.testimonial {
   line-height: 34px;
   margin-top: 5px;
 }
+
+section.tutorials {
+  background-color: white;
+  padding: 80px 10%;
+  color: #071629;
+  font-family: 'Source Sans Pro', sans-serif;
+}
+
+/* titre */
+section.tutorials > h1 {
+  font-size: 32px;
+  line-height: 40px;
+  font-weight: 300;
+  text-align: center;
+  margin-bottom: 60px;
+}
+
+section.tutorials > h1 > span {
+  color: #C271FF;
+  font-weight: 700;
+}
+
+.video-grid {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 30px;
+}
+
+.video-card {
+  background: white;
+  box-shadow: 0px 2px 4px rgba(7, 22, 41, 0.18);
+  border-radius: 5px;
+  width: 255px;
+  overflow: hidden;
+  display: flex;
+  flex-direction: column;
+}
+/* preview img */
+.video-card > img {
+  width: 100%;
+  height: auto;
+  border-radius: 5px 5px 0 0;
+}
+/* title */
+.video-card > h2 {
+  font-size: 16px;
+  font-weight: 700;
+  color: #071629;
+  padding: 14px 13px 5px;
+}
+/* description */
+.video-card > p {
+  font-size: 14px;
+  font-weight: 400;
+  color: rgba(7, 22, 41, 0.5);
+  line-height: 24px;
+  padding: 0 13px 10px;
+}
+
+/* Avatar + Name */
+.video-card > div:nth-of-type(1) {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  padding: 0 13px;
+  margin-bottom: 5px;
+}
+
+.video-card > div:nth-of-type(1) img {
+  width: 30px;
+  height: 30px;
+  border-radius: 50%;
+}
+
+.video-card > div:nth-of-type(1) h3 {
+  font-size: 14px;
+  font-weight: 600;
+  color: #C271FF;
+}
+
+/* Rating and duration */
+.video-card > div:nth-of-type(2) {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0 13px 16px;
+}
+
+.video-card > div:nth-of-type(2) div {
+  display: flex;
+  gap: 2px;
+}
+
+.video-card > div:nth-of-type(2) p {
+  font-size: 14px;
+  font-weight: 600;
+  color: #C271FF;
+}

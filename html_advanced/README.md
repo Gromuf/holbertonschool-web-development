@@ -172,3 +172,7 @@ After the last `section`, outside of the `main`, add a `footer`:
   - A text
 
 And… that’s it for the moment - the result should not be shiny, don’t worry, CSS is coming…
+
+### image of a part of the result :
+
+![alt text](image.png)

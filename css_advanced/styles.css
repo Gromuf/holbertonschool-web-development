@@ -442,3 +442,44 @@ section.faq p {
   line-height: 24px;
   color: rgba(7, 22, 41, 0.5);
 }
+
+.site-footer {
+  background-color: #071629;
+  padding: 40px 10%;
+  color: white;
+  font-family: "Source Sans Pro", sans-serif;
+}
+
+.footer-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 30px;
+}
+
+.footer-top {
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.footer-logo {
+  height: auto;
+  max-width: 150px;
+}
+
+.footer-socials {
+  display: flex;
+  gap: 20px;
+}
+
+.footer-socials a img {
+  width: 30px;
+  height: 30px;
+}
+
+.footer-copy {
+  font-size: 12px;
+  opacity: 0.35;
+}

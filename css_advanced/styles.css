@@ -7,7 +7,7 @@
 
 /* body */
 body {
-  font-family: 'Source Sans Pro', sans-serif;
+  font-family: "Source Sans Pro", sans-serif;
   position: relative;
   color: white;
   background-color: #071629; /* base */
@@ -24,13 +24,12 @@ body::before {
   width: 100vw;
   height: 1093px;
 
-  background: 
-    radial-gradient(
+  background: radial-gradient(
       85.9% 85.9% at 50% 14.1%,
       rgba(41, 48, 61, 0.0001) 0%,
       #071629 100%
     ),
-    url('images/Background.png');
+    url("images/Background.png");
 
   background-repeat: no-repeat;
   background-size: 100% auto; /* ⬅️ étire horizontalement */
@@ -111,7 +110,7 @@ main section:first-of-type p {
 
 /* REGISTER BUTTON */
 main section:first-of-type button {
-  background-color: #C271FF;
+  background-color: #c271ff;
   color: white;
   font-size: 14px;
   font-weight: 600;
@@ -130,7 +129,7 @@ main section:first-of-type button:hover {
 
 /* Learn from the pros */
 main section:first-of-type h2 {
-  color: #C271FF;
+  color: #c271ff;
   font-size: 32px;
   font-weight: 700;
   line-height: 40px;
@@ -191,8 +190,8 @@ main section:first-of-type > div:last-child > div > div > p {
 
 /* testimonial-background */
 section.testimonial {
-  background-color: #C271FF;
-  color:white;
+  background-color: #c271ff;
+  color: white;
   padding: 80px 10%;
   display: flex;
   justify-content: center;
@@ -245,7 +244,7 @@ section.tutorials {
   background-color: white;
   padding: 80px 10%;
   color: #071629;
-  font-family: 'Source Sans Pro', sans-serif;
+  font-family: "Source Sans Pro", sans-serif;
 }
 
 /* titre */
@@ -258,7 +257,7 @@ section.tutorials > h1 {
 }
 
 section.tutorials > h1 > span {
-  color: #C271FF;
+  color: #c271ff;
   font-weight: 700;
 }
 
@@ -318,7 +317,7 @@ section.tutorials > h1 > span {
 .video-card > div:nth-of-type(1) h3 {
   font-size: 14px;
   font-weight: 600;
-  color: #C271FF;
+  color: #c271ff;
 }
 
 /* Rating and duration */
@@ -337,7 +336,7 @@ section.tutorials > h1 > span {
 .video-card > div:nth-of-type(2) p {
   font-size: 14px;
   font-weight: 600;
-  color: #C271FF;
+  color: #c271ff;
 }
 
 section.membership {
@@ -345,14 +344,14 @@ section.membership {
   padding: 80px 10%;
   text-align: center;
   color: white;
-  font-family: 'Source Sans Pro', sans-serif;
+  font-family: "Source Sans Pro", sans-serif;
 }
 
 .membership h1 {
   font-size: 32px;
   line-height: 40px;
   font-weight: 700;
-  color: #C271FF;
+  color: #c271ff;
   margin-bottom: 60px;
 }
 
@@ -387,7 +386,7 @@ section.membership {
 }
 
 .register-btn {
-  background-color: #C271FF;
+  background-color: #c271ff;
   color: white;
   padding: 14px 28px;
   border: none;
@@ -396,4 +395,50 @@ section.membership {
   font-size: 14px;
   cursor: pointer;
   box-shadow: 0px 2px 20px rgba(0, 0, 0, 0.5);
+}
+
+section.faq {
+  padding: 80px 10%;
+  font-family: "Source Sans Pro", sans-serif;
+  background: white;
+  color: #071629;
+}
+
+/* Titre principal */
+section.faq > h1 {
+  font-size: 60px;
+  font-weight: 300;
+  line-height: 75px;
+  text-align: center;
+  margin-bottom: 60px;
+}
+
+/* Grille des colonnes */
+section.faq > div {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 40px;
+  justify-content: space-between;
+}
+
+/* Chaque colonne */
+section.faq > div > div {
+  flex: 1;
+  min-width: 300px;
+  max-width: 48%;
+  display: flex;
+  flex-direction: column;
+  gap: 40px;
+}
+
+section.faq h2 {
+  font-size: 16px;
+  font-weight: 700;
+  margin-bottom: 16px;
+}
+
+section.faq p {
+  font-size: 14px;
+  line-height: 24px;
+  color: rgba(7, 22, 41, 0.5);
 }
